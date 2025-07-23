@@ -7,6 +7,11 @@ resource "azurerm_resource_group" "coltrg2" {
   name     = "coltrg101"
   location = "centralindia"
 }
+resource "azurerm_resource_group" "coltrg5" {
+  name     = "coltrg105"
+  location = "centralindia"
+}
+
 
 resource "azurerm_storage_account" "coltstg" {
   for_each                 = var.mapstg
