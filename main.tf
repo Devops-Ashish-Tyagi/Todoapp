@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "coltrg" {
   location = each.value
 }
 resource "azurerm_resource_group" "coltrg2" {
-  name     = "hclrg"
+  name     = "hclrg1"
   location = "centralindia"
 }
 
