@@ -3,8 +3,9 @@ resource "azurerm_resource_group" "coltrg" {
   name     = each.key
   location = each.value
 }
-resource "azurerm_resource_group" "coltrg2" {
-  name     = "coltrg107"
+resource "azurerm_resource_group" "coltrg2" 
+  name     = "hclrg1"
+
   location = "centralindia"
 }
 resource "azurerm_resource_group" "coltrg5" {
