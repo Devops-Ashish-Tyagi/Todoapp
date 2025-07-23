@@ -13,3 +13,9 @@ resource "azurerm_storage_account" "coltstg" {
   account_replication_type = each.value.account_replication_type
 depends_on = [ azurerm_resource_group.coltrg ]
 }
+
+resource "azurerm_resource_group" "RG-103" {
+  name     = "RG103"
+  location = "West Europe"
+  
+}
