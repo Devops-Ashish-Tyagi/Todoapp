@@ -3,10 +3,16 @@ resource "azurerm_resource_group" "coltrg" {
   name     = each.key
   location = each.value
 }
-resource "azurerm_resource_group" "coltrg2" {
+resource "azurerm_resource_group" "coltrg2" 
   name     = "hclrg1"
+
   location = "centralindia"
 }
+resource "azurerm_resource_group" "coltrg5" {
+  name     = "coltrg105"
+  location = "centralindia"
+}
+
 
 resource "azurerm_storage_account" "coltstg" {
   for_each                 = var.mapstg
